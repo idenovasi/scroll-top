@@ -139,7 +139,7 @@ function scroll_top_custom_css() {
 
 		echo '<!-- Scroll Top -->' . "\n";
 		echo '<style id="scrolltop-custom-style">
-		#scrollUp{border-radius:' . $scroll_radius . ';-webkit-border-radius:' . $scroll_radius . ';-moz-border-radius:' . $scroll_radius . ';font-size:' . $scroll_fontsize . ';opacity:0.8;filter:alpha(opacity=80);bottom:20px;' . $scroll_position . 'color:' . $color . ';background:' . $bgcolor . ';}
+		#scrollUp {border-radius:' . $scroll_radius . ';-webkit-border-radius:' . $scroll_radius . ';-moz-border-radius:' . $scroll_radius . ';font-size:' . $scroll_fontsize . ';opacity:0.8;filter:alpha(opacity=80);bottom:20px;' . $scroll_position . 'color:' . $color . ';background:' . $bgcolor . ';}
 		#scrollUp:hover{opacity:1;filter:alpha(opacity=100);}
 		' . $css . '
 		</style>' . "\n";

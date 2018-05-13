@@ -1,9 +1,9 @@
 === Scroll Top ===
-Contributors: themejunkie, satrya
+Contributors: satrya, themejunkie
 Tags: back to top, button, to top, jquery, scroll to top, scroll top, customization
-Requires at least: 4.0
-Tested up to: 4.8.2
-Stable tag: 1.0.2
+Requires at least: 4.5
+Tested up to: 4.9.5
+Stable tag: 1.0.3
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -12,8 +12,6 @@ Automaticlly adds a flexible Back to Top button to your WordPress website. You c
 == Description ==
 
 This plugin will enable a custom and flexible Back To Top to your WordPress website. It comes with unlimited color choices, icon font option to support retina device, hide on screen width smaller than 600 pixels.
-
-Please take a look the plugin page for more details: [https://www.theme-junkie.com/plugins/scroll-top/](https://www.theme-junkie.com/plugins/scroll-top/)
 
 = Features Include: =
 
@@ -28,7 +26,7 @@ Please take a look the plugin page for more details: [https://www.theme-junkie.c
 
 = Contribute =
 
-If you want to contribute, we hosted the plugin on github: [https://github.com/themejunkie/scroll-top](https://github.com/themejunkie/scroll-top)
+If you want to contribute, we hosted the plugin on github: [https://github.com/satrya/scroll-top](https://github.com/satrya/scroll-top)
 
 == Installation ==
 
@@ -55,14 +53,9 @@ If you want to contribute, we hosted the plugin on github: [https://github.com/t
 
 == Changelog ==
 
+= 1.0.3 - May 13, 2018 =
+* Maintenance update
+
 = 1.0.2 - Oct 18, 2017 =
 * Maintenance update
 * It is now displayed on mobile device!
-
-= 1.0.1 - Sept 10, 2016 =
-* Secure translation text
-* More accesible plugin settings
-* New **circle** button style
-
-= 1.0.0 - Sept 10, 2016 =
-* Support WordPress 4.6.1
