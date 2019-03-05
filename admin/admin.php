@@ -162,6 +162,15 @@ function scroll_top_setting_sections_fields() {
 		'scroll_top_general_settings'
 	);
 
+	// Add 'Target' input setting field.
+	add_settings_field(
+		'scroll_top_target',
+		esc_html__( 'Target (optional)', 'scroll-top' ),
+		'scroll_top_target_field',
+		'scroll_top_settings_page',
+		'scroll_top_general_settings'
+	);
+
 	// Add 'Custom CSS' textarea setting field.
 	add_settings_field(
 		'scroll_top_css',
@@ -281,20 +290,20 @@ function scroll_top_bg_color_field() {
 function scroll_top_radius_field() {
 	$settings = scroll_top_get_plugin_settings( 'scroll_top_radius' );
 ?>
-	<fieldset>
+	<fieldset class="scroll-top-vertical">
 		<legend class="screen-reader-text"><span><?php esc_html_e( 'Radius', 'scroll-top' ); ?></span></legend>
 		<p class="checkbox-img">
 			<label>
 				<input type="radio" name="scroll_top_plugin_settings[scroll_top_radius]" value="rounded" <?php checked( 'rounded', $settings ); ?> />
 				<img src="<?php echo trailingslashit( ST_ASSETS ) . 'img/rounded.png'; ?>" alt="<?php esc_attr_e( 'Rounded', 'scroll-top' ); ?>">
 				<span class="screen-reader-text"><?php esc_html_e( 'Rounded', 'scroll-top' ); ?></span>
-			</label><br />
+			</label>
 
 			<label>
 				<input type="radio" name="scroll_top_plugin_settings[scroll_top_radius]" value="square" <?php checked( 'square', $settings ); ?> />
 				<img src="<?php echo trailingslashit( ST_ASSETS ) . 'img/square.png'; ?>" alt="<?php esc_attr_e( 'Square', 'scroll-top' ); ?>">
 				<span class="screen-reader-text"><?php esc_html_e( 'Square', 'scroll-top' ); ?></span>
-			</label><br />
+			</label>
 
 			<label>
 				<input type="radio" name="scroll_top_plugin_settings[scroll_top_radius]" value="circle" <?php checked( 'circle', $settings ); ?> />
@@ -312,18 +321,18 @@ function scroll_top_radius_field() {
 function scroll_top_animation_field() {
 	$settings = scroll_top_get_plugin_settings( 'scroll_top_animation' );
 ?>
-	<fieldset>
+	<fieldset class="scroll-top-vertical">
 		<legend class="screen-reader-text"><span><?php esc_html_e( 'Animation', 'scroll-top' ); ?></span></legend>
 		<p>
 			<label>
 				<input type="radio" name="scroll_top_plugin_settings[scroll_top_animation]" value="fade" <?php checked( 'fade', $settings ); ?> />
 				<?php esc_html_e( 'Fade', 'scroll-top' ); ?>
-			</label><br />
+			</label>
 
 			<label>
 				<input type="radio" name="scroll_top_plugin_settings[scroll_top_animation]" value="slide" <?php checked( 'slide', $settings ); ?> />
 				<?php esc_html_e( 'Slide', 'scroll-top' ); ?>
-			</label><br />
+			</label>
 
 			<label>
 				<input type="radio" name="scroll_top_plugin_settings[scroll_top_animation]" value="none" <?php checked( 'none', $settings ); ?> />
@@ -353,6 +362,17 @@ function scroll_top_distance_field() {
 ?>
 	<input name="scroll_top_plugin_settings[scroll_top_distance]" type="number" step="100" min="100" id="scroll_top_distance" value="<?php echo (int)$settings; ?>" class="small-text" />
 	<?php esc_html_e( ' px', 'scroll-top' ); ?>
+<?php
+}
+
+/**
+ * Target field
+ */
+function scroll_top_target_field() {
+	$settings = scroll_top_get_plugin_settings( 'scroll_top_target' );
+?>
+	<input name="scroll_top_plugin_settings[scroll_top_target]" type="text" id="scroll_top_target" value="<?php echo esc_attr( $settings ); ?>" />
+	<?php esc_html_e( ' example: #page', 'scroll-top' ); ?>
 <?php
 }
 
@@ -391,12 +411,19 @@ function scroll_top_plugin_settings_render_page() { ?>
 					<div>
 
 						<div class="postbox">
+							<h3 class="hndle"><span><?php esc_html_e( 'Plugin Author', 'scroll-top' ); ?></span></h3>
+							<div class="inside">
+								<p>You need help with your website to fix an issue or to redesign it because you don’t have time to do it yourself. Great! I can help you. I am the plugin author an experienced Web UI designer and WordPress developer with over 6 years of experience, I am the perfect freelancer for your project! Don't hestitate to <a href="https://idenovasi.com/about/" target="_blank">Contact Me</a>!</p>
+							</div>
+						</div>
+
+						<div class="postbox">
 							<h3 class="hndle"><span><?php esc_html_e( 'Plugin Info', 'scroll-top' ); ?></span></h3>
 							<div class="inside">
 								<ul class="ul-square">
-									<li><a href="https://satrya.me/" target="_blank"><?php esc_html_e( 'Author\'s Website', 'scroll-top' ); ?></a></li>
+									<li><a href="https://idenovasi.com/" target="_blank"><?php esc_html_e( 'Author\'s Website', 'scroll-top' ); ?></a></li>
 									<li><a href="http://wordpress.org/support/plugin/scroll-top" target="_blank"><?php esc_html_e( 'Support', 'scroll-top' ); ?></a></li>
-									<li><a href="http://wordpress.org/support/view/plugin-reviews/scroll-top" target="_blank"><?php esc_html_e( 'Rate/Review plugin', 'scroll-top' ); ?></a></li>
+									<li><a href="http://wordpress.org/support/view/plugin-reviews/scroll-top" target="_blank"><?php esc_html_e( 'Please rate the plugin', 'scroll-top' ); ?></a></li>
 								</ul>
 							</div>
 						</div>
@@ -444,6 +471,7 @@ function scroll_top_plugin_settings_validate( $settings ) {
 	$settings['scroll_top_bg_color'] = sanitize_hex_color( $settings['scroll_top_bg_color'] );
 	$settings['scroll_top_speed']    = absint( $settings['scroll_top_speed'] );
 	$settings['scroll_top_distance'] = absint( $settings['scroll_top_distance'] );
+	$settings['scroll_top_target']   = esc_html( $settings['scroll_top_target'] );
 	$settings['scroll_top_css ']     = wp_filter_nohtml_kses( $settings['scroll_top_css '] );
 
 	return $settings;

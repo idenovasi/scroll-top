@@ -1,32 +1,36 @@
 === Scroll Top ===
-Contributors: satrya, themejunkie
+Contributors: idenovasi, satrya
 Tags: back to top, button, to top, jquery, scroll to top, scroll top, customization
 Requires at least: 4.5
-Tested up to: 4.9.5
-Stable tag: 1.0.3
+Tested up to: 5.1
+Stable tag: 1.0.4
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-Automaticlly adds a flexible Back to Top button to your WordPress website. You can choose color you like, Icon Font or plain text and much more.
+Automaticlly adds a flexible Back to Top button to your WordPress website that allows your visitor to scroll back to the top of your page.
 
 == Description ==
 
-This plugin will enable a custom and flexible Back To Top to your WordPress website. It comes with unlimited color choices, icon font option to support retina device, hide on screen width smaller than 600 pixels.
+This plugin will enable a custom and flexible **Back To Top** button to your WordPress website. It allows your visitor to easily scroll back to the top of your page. You will get features such as unlimited color choices, icon font & retina ready.
 
 = Features Include: =
 
+* No setup needed.
+* **Custom target.**
 * Unlimited colors.
 * Retina support(icon font).
 * Choose text or icon font.
 * Customizable text.
 * Position switcher (left or right).
 * Change animation you like.
-* Automatically hide on screen width smaller than 600 pixels.
 * Custom CSS area
 
-= Contribute =
+= Support Me =
 
-If you want to contribute, we hosted the plugin on github: [https://github.com/satrya/scroll-top](https://github.com/satrya/scroll-top)
+* Purchase or download my [WordPress themes](https://wp.idenovasi.com/).
+* Purchase my [Services](https://www.fiverr.com/idenovasi).
+* Try another [WordPress plugin](https://profiles.wordpress.org/idenovasi/#content-plugins) from me.
+* Contribute on [Github](https://github.com/idenovasi/scroll-top).
 
 == Installation ==
 
@@ -52,6 +56,10 @@ If you want to contribute, we hosted the plugin on github: [https://github.com/s
 1. The plugin settings.
 
 == Changelog ==
+
+= 1.0.4 - March 05, 2019 =
+* Support WordPress 5.1
+* Added: Custom target. eg `#page`
 
 = 1.0.3 - May 13, 2018 =
 * Maintenance update

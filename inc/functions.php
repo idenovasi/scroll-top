@@ -19,7 +19,8 @@ function scroll_top_get_default_settings() {
 		'scroll_top_animation'  => 'fade',
 		'scroll_top_speed'      => 300,
 		'scroll_top_distance'   => 300,
-		'scroll_top_css'        => "#scrollUp {\npadding: 5px 10px;\n}"
+		'scroll_top_target'     => '',
+		'scroll_top_css'        => ''
 	);
 
 	// Allow dev to filter the default settings.
@@ -65,16 +66,23 @@ function scroll_top_scrollup_init() {
 	$enable  = scroll_top_get_plugin_settings( 'scroll_top_enable' );
 	$speed   = absint( scroll_top_get_plugin_settings( 'scroll_top_speed' ) );
 	$dist    = absint( scroll_top_get_plugin_settings( 'scroll_top_distance' ) );
+	$target  = esc_attr( scroll_top_get_plugin_settings( 'scroll_top_target' ) );
 	$animate = esc_attr( scroll_top_get_plugin_settings( 'scroll_top_animation' ) );
 	$type    = esc_attr( scroll_top_get_plugin_settings( 'scroll_top_type' ) );
 	$text    = sanitize_text_field( scroll_top_get_plugin_settings( 'scroll_top_text' ) );
 
 	// Scroll top type
-	$scrolltype = '';
+	$scroll_type = '';
 	if ( $type === 'text' ) {
-		$scrolltype = $text;
+		$scroll_type = $text;
 	} else {
-		$scrolltype = '<span class="scroll-top"><i class="icon-up-open"></i></span>';
+		$scroll_type = '<span class="scroll-top"><i class="icon-up-open"></i></span>';
+	}
+
+	// Scroll target
+	$scroll_target = '';
+	if ( ! empty ( $target ) ) {
+		$scroll_target = $target;
 	}
 
 	// Loads the scroll top
@@ -86,8 +94,9 @@ function scroll_top_scrollup_init() {
 			$.scrollUp({
 				scrollSpeed: ' . $speed . ',
 				animation: \'' . $animate . '\',
-				scrollText: \'' . $scrolltype . '\',
-				scrollDistance: ' . $dist . '
+				scrollText: \'' . $scroll_type . '\',
+				scrollDistance: ' . $dist . ',
+				scrollTarget: \'' . $scroll_target . '\'
 			});
 		});
 		</script>' . "\n";
@@ -139,7 +148,7 @@ function scroll_top_custom_css() {
 
 		echo '<!-- Scroll Top -->' . "\n";
 		echo '<style id="scrolltop-custom-style">
-		#scrollUp {border-radius:' . $scroll_radius . ';-webkit-border-radius:' . $scroll_radius . ';-moz-border-radius:' . $scroll_radius . ';font-size:' . $scroll_fontsize . ';opacity:0.8;filter:alpha(opacity=80);bottom:20px;' . $scroll_position . 'color:' . $color . ';background:' . $bgcolor . ';}
+		#scrollUp {border-radius:' . $scroll_radius . ';-webkit-border-radius:' . $scroll_radius . ';-moz-border-radius:' . $scroll_radius . ';font-size:' . $scroll_fontsize . ';opacity:0.7;filter:alpha(opacity=70);bottom:20px;' . $scroll_position . 'color:' . $color . ';background:' . $bgcolor . ';}
 		#scrollUp:hover{opacity:1;filter:alpha(opacity=100);}
 		' . $css . '
 		</style>' . "\n";

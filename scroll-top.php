@@ -1,12 +1,12 @@
 <?php
 /**
  * Plugin Name:  Scroll Top
- * Plugin URI:   https://www.theme-junkie.com/plugins/scroll-top/
+ * Plugin URI:   https://github.com/idenovasi/scroll-top
  * Description:  Adds a flexible Back to Top button to any post/page of your WordPress website.
- * Version:      1.0.3
- * Author:       Satrya
- * Author URI:   https://satrya.me/
- * Author Email: satrya@satrya.me
+ * Version:      1.0.4
+ * Author:       Idenovasi
+ * Author URI:   https://idenovasi.com/
+ * Author Email: satrya@idenovasi.com
  *
  * This program is free software; you can redistribute it and/or modify it under the terms of the GNU
  * General Public License as published by the Free Software Foundation; either version 2 of the License,
