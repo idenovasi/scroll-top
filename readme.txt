@@ -2,7 +2,7 @@
 Contributors: idenovasi, satrya
 Tags: back to top, button, to top, jquery, scroll to top, scroll top, customization
 Requires at least: 4.8
-Tested up to: 5.2.2
+Tested up to: 5.3
 Stable tag: 1.0.4
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
