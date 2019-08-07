@@ -1,13 +1,13 @@
 === Scroll Top ===
 Contributors: idenovasi, satrya
 Tags: back to top, button, to top, jquery, scroll to top, scroll top, customization
-Requires at least: 4.5
-Tested up to: 5.1
+Requires at least: 4.8
+Tested up to: 5.2.2
 Stable tag: 1.0.4
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-Automaticlly adds a flexible Back to Top button to your WordPress website that allows your visitor to scroll back to the top of your page.
+Automaticlly adds a flexible Back to Top button to your WordPress website that allows your visitor to scroll back to the top of your page with one click!
 
 == Description ==
 
@@ -27,9 +27,8 @@ This plugin will enable a custom and flexible **Back To Top** button to your Wor
 
 = Support Me =
 
-* Purchase or download my [WordPress themes](https://wp.idenovasi.com/).
-* Purchase my [Services](https://www.fiverr.com/idenovasi).
-* Try another [WordPress plugin](https://profiles.wordpress.org/idenovasi/#content-plugins) from me.
+* I am a freelance WordPress designer & developer, hire me! [https://idenovasi.com/](https://idenovasi.com/).
+* Try another [WordPress plugins](https://profiles.wordpress.org/idenovasi/#content-plugins) from me.
 * Contribute on [Github](https://github.com/idenovasi/scroll-top).
 
 == Installation ==
@@ -58,7 +57,7 @@ This plugin will enable a custom and flexible **Back To Top** button to your Wor
 == Changelog ==
 
 = 1.0.4 - March 05, 2019 =
-* Support WordPress 5.1
+* Support WordPress 5.2.2
 * Added: Custom target. eg `#page`
 
 = 1.0.3 - May 13, 2018 =
