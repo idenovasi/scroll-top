@@ -1,20 +1,29 @@
 {
   "name": "scroll-top",
-  "version": "1.0.4",
-  "author": "Theme Junkie",
-  "homepage": "https://www.theme-junkie.com/",
-  "licenses": [
-    {
-      "type": "GPL",
-      "url": "http://www.gnu.org/licenses/gpl-2.0.html"
-    }
+  "version": "1.1.0",
+  "description": "A simple back to top plugin",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/satrya/scroll-top.git"
+  },
+  "keywords": [
+    "wordpress",
+    "plugin"
   ],
+  "author": "Satrya (satrya@idenovasi.com)",
+  "license": "GPL-2.0-or-later",
+  "bugs": {
+    "url": "https://github.com/satrya/scroll-top/issues"
+  },
+  "homepage": "https://github.com/satrya/scroll-top#readme",
   "devDependencies": {
-    "grunt": "~1.0.4",
-    "grunt-wp-i18n": "^1.0.3",
-    "jit-grunt": "^0.10.0",
-    "grunt-contrib-clean": "^2.0.0",
-    "grunt-contrib-compress": "^1.6.0",
-    "grunt-contrib-copy": "^1.0.0"
+    "del": "^6.0.0",
+    "gulp": "^4.0.2",
+    "gulp-wp-pot": "^2.5.0",
+    "gulp-zip": "^5.0.2"
   }
 }
