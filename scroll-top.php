@@ -4,11 +4,14 @@
  * Plugin Name:  ID Back To Top
  * Plugin URI:   https://github.com/satrya/scroll-top
  * Description:  Adds a flexible Back to Top button to any post/page of your WordPress website.
- * Version:      1.1.0
+ * Version:      1.2.0
  * Author:       Idenovasi
  * Author URI:   https://idenovasi.com/
  * Author Email: satrya@idenovasi.com
  *
+ * Contributors: 
+ *               Vittorio Nardone (https://www.vittorionardone.it)
+ * 
  * This program is free software; you can redistribute it and/or modify it under the terms of the GNU
  * General Public License as published by the Free Software Foundation; either version 2 of the License,
  * or (at your option) any later version.

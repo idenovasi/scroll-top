@@ -13,7 +13,7 @@ msgstr ""
 "X-Poedit-SourceCharset: UTF-8\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: admin/admin.php:15, admin/admin.php:394
+#: admin/admin.php:15, admin/admin.php:414
 msgid "ID Back To Top Settings"
 msgstr ""
 
@@ -21,19 +21,19 @@ msgstr ""
 msgid "Back To Top"
 msgstr ""
 
-#: admin/admin.php:77, admin/admin.php:192
+#: admin/admin.php:77, admin/admin.php:201
 msgid "Enable"
 msgstr ""
 
-#: admin/admin.php:86, admin/admin.php:212
+#: admin/admin.php:86, admin/admin.php:221
 msgid "Type"
 msgstr ""
 
-#: admin/admin.php:95, admin/admin.php:221
+#: admin/admin.php:95, admin/admin.php:230
 msgid "Text"
 msgstr ""
 
-#: admin/admin.php:104, admin/admin.php:248
+#: admin/admin.php:104, admin/admin.php:257
 msgid "Position"
 msgstr ""
 
@@ -49,7 +49,7 @@ msgstr ""
 msgid "Style"
 msgstr ""
 
-#: admin/admin.php:140, admin/admin.php:323
+#: admin/admin.php:140, admin/admin.php:332
 msgid "Animation"
 msgstr ""
 
@@ -66,66 +66,70 @@ msgid "Target (optional)"
 msgstr ""
 
 #: admin/admin.php:176
+msgid "Binding (optional)"
+msgstr ""
+
+#: admin/admin.php:185
 msgid "Custom CSS"
 msgstr ""
 
-#: admin/admin.php:196
+#: admin/admin.php:205
 msgid "Enable Back To Top?"
 msgstr ""
 
-#: admin/admin.php:216
+#: admin/admin.php:225
 msgid "Icon"
 msgstr ""
 
-#: admin/admin.php:252
+#: admin/admin.php:261
 msgid "Right Side"
 msgstr ""
 
-#: admin/admin.php:257
+#: admin/admin.php:266
 msgid "Left Side"
 msgstr ""
 
-#: admin/admin.php:292
+#: admin/admin.php:301
 msgid "Radius"
 msgstr ""
 
-#: admin/admin.php:296, admin/admin.php:297
+#: admin/admin.php:305, admin/admin.php:306
 msgid "Rounded"
 msgstr ""
 
-#: admin/admin.php:302, admin/admin.php:303
+#: admin/admin.php:311, admin/admin.php:312
 msgid "Square"
 msgstr ""
 
-#: admin/admin.php:308, admin/admin.php:309
+#: admin/admin.php:317, admin/admin.php:318
 msgid "Circle"
 msgstr ""
 
-#: admin/admin.php:327
+#: admin/admin.php:336
 msgid "Fade"
 msgstr ""
 
-#: admin/admin.php:332
+#: admin/admin.php:341
 msgid "Slide"
 msgstr ""
 
-#: admin/admin.php:337
+#: admin/admin.php:346
 msgid "None"
 msgstr ""
 
-#: admin/admin.php:351
+#: admin/admin.php:360
 msgid " millisecond"
 msgstr ""
 
-#: admin/admin.php:362
+#: admin/admin.php:371
 msgid " px"
 msgstr ""
 
-#: admin/admin.php:373
+#: admin/admin.php:382, admin/admin.php:393
 msgid " example: #page"
 msgstr ""
 
-#: admin/admin.php:404
+#: admin/admin.php:424
 msgid "Save Settings"
 msgstr ""
 

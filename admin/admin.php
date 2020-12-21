@@ -170,6 +170,15 @@ function scroll_top_setting_sections_fields() {
         'scroll_top_general_settings'
     );
 
+    // Add 'Binding' input setting field.
+    add_settings_field(
+        'scroll_top_binding',
+        esc_html__('Binding (optional)', 'scroll-top'),
+        'scroll_top_binding_field',
+        'scroll_top_settings_page',
+        'scroll_top_general_settings'
+    );
+
     // Add 'Custom CSS' textarea setting field.
     add_settings_field(
         'scroll_top_css',
@@ -375,6 +384,17 @@ function scroll_top_target_field() {
 }
 
 /**
+ * Binding field
+ */
+function scroll_top_binding_field() {
+    $settings = scroll_top_get_plugin_settings('scroll_top_binding');
+?>
+    <input name="scroll_top_plugin_settings[scroll_top_binding]" type="text" id="scroll_top_binding" value="<?php echo esc_attr($settings); ?>" />
+    <?php esc_html_e(' example: #page', 'scroll-top'); ?>
+<?php
+}
+
+/**
  * Custom CSS
  */
 function scroll_top_css_field() {
@@ -454,6 +474,7 @@ function scroll_top_plugin_settings_validate($settings) {
     $settings['scroll_top_speed']    = absint($settings['scroll_top_speed']);
     $settings['scroll_top_distance'] = absint($settings['scroll_top_distance']);
     $settings['scroll_top_target']   = esc_html($settings['scroll_top_target']);
+    $settings['scroll_top_binding']  = esc_html($settings['scroll_top_binding']);
     $settings['scroll_top_css ']     = wp_filter_nohtml_kses($settings['scroll_top_css ']);
 
     return $settings;
