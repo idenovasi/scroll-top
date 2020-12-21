@@ -1,9 +1,9 @@
 === ID Back To Top ===
-Contributors: idenovasi, satrya
+Contributors: idenovasi, satrya, vittorio-nardone
 Tags: back to top, button, to top, jquery, scroll to top, scroll top, customization
 Requires at least: 4.8
 Tested up to: 5.5
-Stable tag: 1.1.0
+Stable tag: 1.2.0
 Requires PHP: 5.2.4
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -19,6 +19,7 @@ This plugin will automaticlly enable a custom and flexible **Back to Top** butto
 * Free FOREVER.
 * No setup needed.
 * **Custom target.**
+* **Custom binding.**
 * Unlimited colors.
 * Retina support(icon font).
 * Choose text or icon font.
@@ -53,6 +54,9 @@ This plugin will automaticlly enable a custom and flexible **Back to Top** butto
 1. The plugin settings.
 
 == Changelog ==
+
+= 1.2.0 =
+* Added binding parameter
 
 = 1.1.0 =
 * Support WordPress 5.5

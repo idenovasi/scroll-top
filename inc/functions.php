@@ -21,6 +21,7 @@ function scroll_top_get_default_settings() {
         'scroll_top_speed'      => 300,
         'scroll_top_distance'   => 300,
         'scroll_top_target'     => '',
+        'scroll_top_binding'    => '',
         'scroll_top_css'        => ''
     );
 
@@ -67,6 +68,7 @@ function scroll_top_scrollup_init() {
     $speed   = absint(scroll_top_get_plugin_settings('scroll_top_speed'));
     $dist    = absint(scroll_top_get_plugin_settings('scroll_top_distance'));
     $target  = esc_attr(scroll_top_get_plugin_settings('scroll_top_target'));
+    $binding = esc_attr(scroll_top_get_plugin_settings('scroll_top_binding'));
     $animate = esc_attr(scroll_top_get_plugin_settings('scroll_top_animation'));
     $type    = esc_attr(scroll_top_get_plugin_settings('scroll_top_type'));
     $text    = sanitize_text_field(scroll_top_get_plugin_settings('scroll_top_text'));
@@ -85,6 +87,12 @@ function scroll_top_scrollup_init() {
         $scroll_target = $target;
     }
 
+    // Scroll binding
+    $scroll_binding = '';
+    if (!empty($binding)) {
+        $scroll_binding = $binding;
+    }
+
     // Loads the scroll top
     if ($enable) {
 
@@ -96,7 +104,8 @@ function scroll_top_scrollup_init() {
 				animation: \'' . $animate . '\',
 				scrollText: \'' . $scroll_type . '\',
 				scrollDistance: ' . $dist . ',
-				scrollTarget: \'' . $scroll_target . '\'
+                scrollTarget: \'' . $scroll_target . '\',
+                scrollBinding: \'' . $scroll_binding . '\'
 			});
 		});
 		</script>' . "\n";
