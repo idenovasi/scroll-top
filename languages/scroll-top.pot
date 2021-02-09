@@ -1,4 +1,4 @@
-# Copyright (C) 2020 Scroll Top
+# Copyright (C) 2021 Scroll Top
 # This file is distributed under the same license as the Scroll Top package.
 msgid ""
 msgstr ""

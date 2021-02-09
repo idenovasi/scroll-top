@@ -1,10 +1,11 @@
 === ID Back To Top ===
 Contributors: idenovasi, satrya
+Donate link: https://paypal.me/satrya
 Tags: back to top, button, to top, jquery, scroll to top, scroll top, customization
 Requires at least: 4.8
-Tested up to: 5.5
-Stable tag: 1.1.0
-Requires PHP: 5.2.4
+Tested up to: 5.6
+Requires PHP: 7.2
+Stable tag: 1.1.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -12,11 +13,10 @@ Automaticlly adds a flexible Back to Top button to your WordPress website that a
 
 == Description ==
 
-This plugin will automaticlly enable a custom and flexible **Back to Top** button to your WordPress website that allows your visitor to scroll back to the top of your page with one click!
+This plugin will automaticlly enable a custom and flexible [Back to Top](https://idenovasi.com/projects/scroll-top/) button to your WordPress website that allows your visitor to scroll back to the top of your page with one click!
 
 = Features Include: =
 
-* Free FOREVER.
 * No setup needed.
 * **Custom target.**
 * Unlimited colors.
@@ -27,7 +27,11 @@ This plugin will automaticlly enable a custom and flexible **Back to Top** butto
 * Change animation you like.
 * Custom CSS area.
 
-**Contribute on [Github](https://github.com/idenovasi/scroll-top).**
+= Support this project =
+
+* [Translate to your language](https://translate.wordpress.org/projects/wp-plugins/scroll-top/).
+* Contribute on [Github](https://github.com/satrya/scroll-top).
+* [Donate](https://paypal.me/satrya).
 
 == Installation ==
 
@@ -54,8 +58,6 @@ This plugin will automaticlly enable a custom and flexible **Back to Top** butto
 
 == Changelog ==
 
-= 1.1.0 =
-* Support WordPress 5.5
-* Change name from **Scroll Top** to **ID Back To Top**
-* Better and slimmer back to top icon
+= 1.1.1 =
+* Maintenance update
 

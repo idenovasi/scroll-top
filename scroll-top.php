@@ -2,9 +2,9 @@
 
 /**
  * Plugin Name:  ID Back To Top
- * Plugin URI:   https://github.com/satrya/scroll-top
+ * Plugin URI:   https://idenovasi.com/projects/scroll-top/
  * Description:  Adds a flexible Back to Top button to any post/page of your WordPress website.
- * Version:      1.1.0
+ * Version:      1.1.1
  * Author:       Idenovasi
  * Author URI:   https://idenovasi.com/
  * Author Email: satrya@idenovasi.com
